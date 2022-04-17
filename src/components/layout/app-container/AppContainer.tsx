@@ -46,20 +46,8 @@ const AppContainer = (props: AppContainerProps) => {
       <Head>
         <title>{title || 'Developer WEB Dashboard'}</title>
       </Head>
-      <StyledLayout className="layout" hasSider>
-        <Sider
-          collapsible
-          collapsed={collapsed}
-          onCollapse={handleOnCollapse}
-          style={{
-            overflow: 'auto',
-            height: '100vh',
-            position: 'fixed',
-            left: 0,
-            top: 0,
-            bottom: 0,
-          }}
-        >
+      <StyledLayout>
+        <Sider collapsible collapsed={collapsed} onCollapse={handleOnCollapse}>
           <Link href="/dashboard">
             <a>
               <div className="logo" />
@@ -86,14 +74,13 @@ const AppContainer = (props: AppContainerProps) => {
         <Layout
           className="site-layout"
           style={{
-            marginLeft: 200,
             overflowY: 'auto',
             height: 'min-content',
             minHeight: '100vh',
           }}
         >
           <Header className="site-layout-background" style={{ padding: 0 }} />
-          <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
+          <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               {arrayDataPaths.length > 0 && (
                 <>
