@@ -162,15 +162,20 @@ const NewPage = () => {
                 name="age"
                 rules={[
                   {
-                    required: true,
                     type: 'number',
                     transform: value => Number(value),
                     max: 90,
                     min: 10,
                   },
+                  {
+                    required: true,
+                  },
+                  {
+                    len: 2,
+                  },
                 ]}
               >
-                <Input type="number" placeholder="Preencher" />
+                <Input max={90} maxLength={2} placeholder="Ex: 20" />
               </Form.Item>
               <Form.Item
                 label="Passatempo"
