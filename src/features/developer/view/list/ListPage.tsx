@@ -48,7 +48,6 @@ const ListPage = () => {
       },
       {
         title: 'Nível',
-        sorter: true,
         render: (data: DeveloperData) => data.level.level,
       },
       {
