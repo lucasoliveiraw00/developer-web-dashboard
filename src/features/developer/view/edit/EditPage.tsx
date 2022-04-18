@@ -50,7 +50,7 @@ const sexes = [
   },
   {
     name: 'Não prefiro informar',
-    slug: '',
+    slug: null,
   },
 ];
 
@@ -82,6 +82,7 @@ const EditPage = () => {
     if (developerData)
       refForm.current?.setFieldsValue({
         ...developerData,
+        age: developerData?.age,
         birth_date: moment(developerData?.birth_date),
       });
   }, [developerData, refForm]);
@@ -200,9 +201,6 @@ const EditPage = () => {
                     },
                     {
                       required: true,
-                    },
-                    {
-                      len: 2,
                     },
                   ]}
                 >

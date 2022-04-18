@@ -49,7 +49,7 @@ const sexes = [
   },
   {
     name: 'Não prefiro informar',
-    slug: '',
+    slug: null,
   },
 ];
 
@@ -169,9 +169,6 @@ const NewPage = () => {
                   },
                   {
                     required: true,
-                  },
-                  {
-                    len: 2,
                   },
                 ]}
               >

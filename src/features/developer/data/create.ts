@@ -12,7 +12,6 @@ async function createDeveloper(
   const formData = {
     ...values,
     birth_date: moment(values?.birth_date).toISOString(),
-    sex: values.sex.length === 0 ? null : values.sex,
   };
 
   return apiBase.post(`/developer`, formData);
