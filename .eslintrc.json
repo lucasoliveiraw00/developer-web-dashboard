@@ -46,7 +46,9 @@
       "files": ["*.stories.@(ts|tsx|js|jsx)"],
       "rules": {
         "storybook/hierarchy-separator": "error",
-        "storybook/default-exports": "off"
+        "storybook/default-exports": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-props-no-spreading": "off"
       }
     }
   ],
