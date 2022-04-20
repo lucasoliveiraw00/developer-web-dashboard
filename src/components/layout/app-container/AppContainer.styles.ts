@@ -21,7 +21,7 @@ export const StyledContentLayout = styled(Layout, {
   height: 'min-content',
   minHeight: '100vh',
   '.site-layout-background': { padding: 0 },
-  '.site-layout-content': { margin: '0 16px' },
+  '.site-layout-content': { margin: '0 16px 16px' },
   '.site-layout-breadcrumb': { margin: '16px 0' },
   '.site-layout-container': { padding: 24, minHeight: 350 },
   '.site-layout-footer': { textAlign: 'center' },
