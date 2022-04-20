@@ -91,7 +91,7 @@ utilizando API REST com os métodos (​GET​, ​POST​, ​PUT/PATCH​ e �
 
    ```console
    # SSH
-   $ git@github.com
+   $ git@github.com:lucasoliveiraw00/developer-web-dashboard.git
    ```
 
 2. Gere o arquivo .env:
@@ -157,7 +157,7 @@ utilizando API REST com os métodos (​GET​, ​POST​, ​PUT/PATCH​ e �
 
    ```console
    # SSH
-   $ git@github.com
+   $ git@github.com:lucasoliveiraw00/developer-web-dashboard.git
    ```
 
 2. Gere o arquivo .env:
