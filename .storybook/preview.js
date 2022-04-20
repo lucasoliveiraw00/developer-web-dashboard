@@ -29,7 +29,7 @@ export const decorators = [
           />
           <Content className="site-layout-content">
             <div
-              className=" site-layout-container"
+              className="site-layout-container"
               style={{ backgroundColor: '#fff' }}
             >
               <Story />
