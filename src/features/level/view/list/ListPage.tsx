@@ -27,7 +27,7 @@ const ListPage = () => {
   const columns = useMemo<TableColumnProps<LevelData>[]>(
     () => [
       {
-        title: 'Nínel',
+        title: 'Nível',
         dataIndex: 'level',
         sorter: true,
       },
