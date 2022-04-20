@@ -14,7 +14,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:import/recommended",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -39,6 +40,15 @@
       "files": ["./pages/**", "./pages/api/**"],
       "rules": {
         "import/prefer-default-export": "error"
+      }
+    },
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx)"],
+      "rules": {
+        "storybook/hierarchy-separator": "error",
+        "storybook/default-exports": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-props-no-spreading": "off"
       }
     }
   ],
