@@ -13,7 +13,7 @@ import {
 
 import { useRouter } from 'next/router';
 
-import { StyledLayout } from './AppContainer.styles';
+import { StyledLayout, StyledContentLayout } from './AppContainer.styles';
 
 import { AppContainerProps, DataPathsProps } from './types';
 
@@ -39,7 +39,7 @@ const AppContainer = (props: AppContainerProps) => {
     endDataPath = arrayDataPaths.pop();
   }
 
-  const pathNames = router.pathname?.split('/').filter(path => !!path) || [];
+  const pathNames = router?.pathname?.split('/').filter(path => !!path) || [];
 
   return (
     <>
@@ -71,17 +71,10 @@ const AppContainer = (props: AppContainerProps) => {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout
-          className="site-layout"
-          style={{
-            overflowY: 'auto',
-            height: 'min-content',
-            minHeight: '100vh',
-          }}
-        >
-          <Header className="site-layout-background" style={{ padding: 0 }} />
-          <Content style={{ margin: '0 16px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
+        <StyledContentLayout className="site-layout">
+          <Header className="site-layout-background" />
+          <Content className="site-layout-content">
+            <Breadcrumb className="site-layout-breadcrumb">
               {arrayDataPaths.length > 0 && (
                 <>
                   {arrayDataPaths.map((item: DataPathsProps) => (
@@ -106,16 +99,16 @@ const AppContainer = (props: AppContainerProps) => {
               )}
             </Breadcrumb>
             {layout === 'container' && (
-              <div className="site-layout-background" style={{ padding: 24 }}>
+              <div className="site-layout-background site-layout-container">
                 {children}
               </div>
             )}
             {layout === 'full' && children}
           </Content>
-          <Footer style={{ textAlign: 'center' }}>
+          <Footer className="site-layout-footer">
             Developer WEB Dashboard ©2022
           </Footer>
-        </Layout>
+        </StyledContentLayout>
       </StyledLayout>
     </>
   );
