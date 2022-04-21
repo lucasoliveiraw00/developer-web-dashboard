@@ -36,9 +36,10 @@ utilizando API REST com os métodos (​GET​, ​POST​, ​PUT/PATCH​ e �
 
 ### 📒 Documentação
 
-- <a href="#-instalação" >(APP) Instalação</a>
-  - <a href="#-ambiente-de-desenvolvimento" >Desenvolvimento</a>
-  - <a href="#-ambiente-de-produção" >Produção</a>
+- <a href="#-instalação">(APP) Instalação</a>
+  - <a href="#-ambiente-de-desenvolvimento">Desenvolvimento</a>
+  - <a href="#-ambiente-de-produção">Produção</a>
+- <a href="https://626169d9bd049a003aabfcc7-plggryidka.chromatic.com/">(UI) Componentes</a>
 
 </br>
 
@@ -191,6 +192,7 @@ utilizando API REST com os métodos (​GET​, ​POST​, ​PUT/PATCH​ e �
 - ⚡️ [Next.js 12](https://nextjs.org/)
 - ⚛️ [React 17](https://pt-br.reactjs.org/)
 - 🪄 [Ant Design](https://ant.design/)
+- 🔮 [Storybook](https://storybook.js.org/)
 - 💅 [Stitches](https://stitches.dev/)
 - 💫 [TypeScript](https://www.typescriptlang.org/)
 - 🐶 [Husky](https://typicode.github.io/husky/#/)
