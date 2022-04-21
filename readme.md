@@ -39,7 +39,7 @@ utilizando API REST com os métodos (​GET​, ​POST​, ​PUT/PATCH​ e �
 - <a href="#-instalação">(APP) Instalação</a>
   - <a href="#-ambiente-de-desenvolvimento">Desenvolvimento</a>
   - <a href="#-ambiente-de-produção">Produção</a>
-- <a href="https://626169d9bd049a003aabfcc7-plggryidka.chromatic.com/">(UI) Componentes</a>
+- <a href="https://main--626169d9bd049a003aabfcc7.chromatic.com">(UI) Componentes</a>
 
 </br>
 
